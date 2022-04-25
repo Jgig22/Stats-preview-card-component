@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.main-background {
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    padding: 6.25rem;
+} 
+
+
+.card {
+    display: flex;
+    margin: 0 auto; 
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    
+    
+}
+
+.first-cell {
+    
+    padding: 30px;
+    margin: 0 auto;
+}
+
+
+
+.desktop {
+    
+    background-image: url("./image-header-desktop.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    width: 390px;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.inner {
+    background-color: hsl(277, 64%, 61%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.55;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+ 
+
+.mobile {
+    background-image: url("./image-header-mobile.jpg");
+    background-size: cover;
+    background-position: top; 
+    width: 300px;
+    height: 200px;
+    display: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+} 
+
+
+
+.first-cell p{
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.first-cell span{
+    color: hsl(277, 64%, 61%);
+
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stats p {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.stats p span {
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10px
+}
+
+@media screen and (max-width: 770px) { 
+
+    .card {
+        flex-direction: column-reverse;
+        /* height: 700px; */
+        width: 18.75rem;
+        align-items: center; 
+        text-align: center;
+        margin: 0 auto;
+    }
+  
+    .inner {
+        background-color: hsl(277, 64%, 61%);
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+     
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    } 
+
+    .first-cell {
+        padding: 0px;
+        padding-bottom: 1rem;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
